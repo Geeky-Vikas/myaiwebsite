@@ -1,0 +1,877 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
+
+@import url('"https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Ysabeau+Office:itaL,wght@0,200;0,800;1,700&display=swap');
+:root{
+    
+    --bg-color:#1f242d;
+    --second-bg-color:#323946;
+    --second-bg-color:#323946;
+    --text-color:#fff;
+    --main-color:#0ef;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    list-style-type: none;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: all .2s linear;
+    font-family: 'Edu SA Beginner', cursive;
+}
+
+html{
+
+    font-size: 62.5%;
+    overflow-x: hidden; 
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+*::selection{
+    background: var(--second-bg-color);
+    color: var(--text-color);
+}
+body{
+    height: 300rem;
+}
+span{
+    color: var(--main-color);
+}
+/*********************************> Start Header-Section <*********************************/
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: var(--second-bg-color);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    /* border: .01rem solid var(--main-color); */
+    /* box-shadow: var(--main-color); */
+}
+
+header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-style: italic;
+    /* font-family: 'Ysabeau SC', sans-serif; */
+    font-family: 'Edu SA Beginner', cursive;
+    /* border-top: .1rem solid var(--main-color); */
+    border-bottom: .1rem solid var(--main-color);
+}
+
+header .navbar{
+    color: var(--text-color);
+    
+
+}
+
+header span{
+    color: var(--main-color);
+}
+header .icons i{
+    font-size: 2rem;
+    color: var(--main-color);
+    cursor: pointer;
+    margin-right: 2.5rem;
+}
+
+header .navbar a{
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin: 0 .7rem;
+    
+}
+
+header .navbar a:hover{
+    color: var(--main-color);
+}
+
+header .search-bar-container{
+    position: absolute;
+    top: 100%; left: 0; right: 0;
+    padding: 1.25rem 1.5rem;
+    background: var(--bg-color);
+    display: flex;
+    align-items: center;
+    border-top: .1rem solid var(--main-color);
+    z-index: 1001;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+}
+header .search-bar-container.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+header .search-bar-container  #search-bar{
+    width: 100%;
+    padding: 0.8rem;
+    text-transform: none;
+    color: var(--second-bg-color);
+    font-size: 1.5rem;
+    border-radius: .5rem;
+}
+ 
+header .search-bar-container label{
+    color: var(--text-color);
+    cursor: pointer;
+    font-size: 3rem;
+    margin-left: 1.5rem;
+
+}
+
+header .search-bar-container label:hover{
+    color: var(--main-color);
+}
+
+
+/*=====================================> Login-Form-Section <=================================*/
+
+.login-form-container{
+    position: fixed;
+    top: -120%; left: 0;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--second-bg-color);
+    z-index: 10000;
+    
+}
+
+.login-form-container.active{
+    top:0;
+}
+
+
+
+.login-form-container form{
+    margin: 2rem;
+    padding: 1.5rem 2rem;
+    border-radius: .5rem;
+    background: var(--text-color);
+    width: 50rem;
+}
+
+.login-form-container form h3{
+    font-size: 3rem;
+    color: var(--second-bg-color);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.login-form-container form .box{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: var(--bg-color);
+    margin: .6rem 0;
+    border: .1rem solid var(--main-color);
+    border-radius: 1rem;
+}
+
+.login-form-container form .box:focus{
+    border-color: var(--main-color);
+}
+
+.login-form-container form #remember{
+    margin: 2rem 0;
+
+}
+
+.login-form-container form label{
+    font-size: 1.7rem;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    background: var(--main-color);
+    color: var(--bg-color);
+    padding: .8rem 2.5rem;
+    font-size: 1.7rem;
+    border: .1rem solid var(--second-bg-color);
+    cursor: pointer;
+    border-radius: 5rem;
+}
+.btn:hover{
+    color: var(--main-color);
+    border: .1rem solid var(--main-color);
+    background: var(--second-bg-color);
+}
+
+.login-form-container form .btn{
+    display: block;
+    width: 100%;
+}
+.login-form-container form p{
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    color: var(--bg-color);
+}
+.login-form-container form p a{
+    color: blue;
+}
+.login-form-container form p a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+.login-form-container  #form-close{
+    position: absolute;
+    top: 2rem; right: 3rem;
+    font-size: 3rem;
+    color: var(--text-color);
+    /* background: #0ef; */
+    cursor: pointer;
+
+}
+
+
+/* =========================================>MenuBar<======================================== */
+
+#menu-bar{
+    font-size: 2rem;
+    color: var(--main-color);
+    border: .1rem solid var(--text-color);
+    border-radius: .5rem;
+    padding: .5rem 1.2rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+
+/* ===================================>Home Section <================================== */
+
+section{
+    background: var(--second-bg-color);
+   padding: 1.5rem 9%;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    z-index: 0;
+    min-height: 100vh;
+    /* background: var(--bg-color); */
+}
+
+.home .content{
+    text-align: center;
+}
+
+.home .content h3{
+    font-size: 4rem;
+    color: var(--main-color);
+    text-transform: capitalize;
+    font-family: 'Edu SA Beginner', cursive;
+    text-shadow: 0 0.3rem .5rem var(--second-bg-color);
+
+}
+
+.home .content p{
+    font-size: 2.5rem;
+    color: var(--bg-color);
+    padding: .5rem 0;
+}
+
+
+
+.home .video-container video{
+    position: absolute;
+    top: 69px; left: 0;
+    z-index: -1;
+    height: 70%;
+    width: 100%;
+    object-fit:cover;
+    border-top: .1rem solid var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+
+}
+
+.home .controls{
+    padding: .6rem;
+    border-radius: 3rem;
+    background: var(--second-bg-color);
+    position: relative;
+    top: 10rem;
+}
+
+.home .controls .vid-btn{
+    height: 1rem;
+    width: 1em; 
+    display: inline-block;
+    border-radius: 50%;
+    background: var(--text-color);
+    cursor: pointer;
+    margin: 0 .2rem;
+}
+
+.home .controls .vid-btn.active{
+    background: var(--main-color);
+}
+
+.home .description{
+    /* color: var(--text-color); */
+    /* font-size: 3rem; */
+    /* margin-top: 100rem; */
+    background: #323946;
+}
+
+/* <!-- 1. ===================================> Images Services Section <================================== --> */
+/* <!-- 2. =======================> ChatBot Section <====================== --> */
+
+.image-service{
+    background-color: var(--second-bg-color);
+    width: 100%;
+    
+}
+
+
+.image-service h1{
+    font-size: 5rem;
+    color: var(--text-color);
+    text-align: center;
+    padding: 1rem 0;
+    /* border-bottom: .1rem solid var(--main-color); */
+    text-transform: capitalize;
+    margin-bottom: 4rem;
+}
+
+.image-service .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.box-container .box{
+    border: .1rem solid var(--main-color);
+    flex: 1 1 30rem;
+    border-radius: 1rem;
+}
+.image-service .box-container .box .content{
+    text-align: center;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.image-service .box-container .box .content .stars{
+   color: khaki;
+}
+
+.image-service .box-container .box .content p{
+    color: var(--text-color)
+ }
+
+
+.image-service .box-container .box .content h3{
+   font-size: 2.5rem;
+   color: var(--text-color);
+   font-weight: bold;
+}
+
+.image-service .box-container .box img{
+    height: 25rem;
+    width: 100%;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+/* ===================================>Video Service Section<================================== */
+.video-section{
+    background: var(--bg-color);
+    width: 100%;
+}
+
+.video-section .heading{ /* h2*/
+    margin-bottom: 4rem;
+    font-size: 5rem;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.video-container{
+    display: flex; /*grid */
+    flex-wrap: wrap;
+    /* grid-template-columns: repeat(3,1fr); */
+    align-items: center;
+    gap: 3rem;
+}
+
+.video-container .video-box{
+    position: relative;
+    /* border: .1rem solid var(--main-color); */
+    flex: 1 1 30rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    /* display: flex; */
+}
+
+.video-box img{
+    width: 100%;
+    transition: .5s ease;
+}
+
+.video-box img:hover{
+    transform: scale(1.3);
+}
+
+.video-container .video-layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.1), var(--main-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 1.8rem;
+    transform: translateY(100%);
+    transition: 1.5s ease;
+
+}
+
+.video-box:hover .video-layer{
+    transform: translateY(0);
+
+}
+
+.video-layer h4{font-size: 3rem; color: var(--text-color);}
+
+.video-layer p{
+    font-size: 1.4rem;
+    margin: 2rem 0 1rem;
+    color: var(--bg-color);
+}
+
+.video-layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: var(--text-color);
+    border-radius: 50%;
+}
+
+.video-layer a i{
+    font-size: 2.5rem;
+    color: var(--bg-color);
+}
+
+/*********************************>Audio-Section<*********************************/
+.Audio-Section{
+    background: var(--second-bg-color);
+}
+
+.Audio-Section h2{
+    margin-bottom: 4rem;
+    font-size: 4rem;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.Audio-Section .audio-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.Audio-Section .audio-container .box{
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    border: .5rem  solid var(--text-color);
+    border-radius: 1rem;
+    flex: 1 1 30rem;
+    height: 25rem;
+    position: relative;
+}
+
+.audio-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.audio-container .box .content{
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background: rgba(0,0,0,.6);
+    padding: 2rem;
+    padding-top: 5rem;
+    transform: translateY(-100%);
+    transition: 1s ease;
+}
+
+.audio-container .box:hover .content{
+    transform: translateY(0);
+}
+
+.audio-container .box .content h3{
+    font-size: 3rem;
+    color: var(--text-color);
+
+}
+
+.audio-container .box .content p{
+    font-size: 1.5rem;
+    color: var(--text-color);
+    padding: 1.5rem 0;
+    
+}
+
+.audio-container .box .content .btn{
+    font-size: 1rem;
+
+}
+/* ========================> ChatGPT Section <================================== --> */
+
+.chat-section{
+    background: var(--bg-color);
+}
+
+.chat-section .heading{
+    font-size: 4rem;
+}
+
+/* ========================> Reviews Section <================================== --> */
+.Reviews-Section{
+    background: var(--second-bg-color);
+}
+
+.Reviews-Section .heading{
+    text-align: center;
+    font-size: 4rem;
+    color: var(--text-color);
+    padding-bottom: 5rem;
+}
+
+.Reviews-Section .review-slider{
+    padding-bottom: 2rem;
+}
+
+
+.Reviews-Section .box{
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.9);
+    border-radius: 1rem;
+    background: var(--bg-color);
+}
+
+
+.Reviews-Section .box img{
+    height: 13rem;
+    width: 13rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+
+}
+
+.Reviews-Section  .box h3{
+    color: var(--main-color);
+    font-size: 2.5rem;
+}
+
+.Reviews-Section .box p{
+    color: var(--text-color);
+    font-size: 1.1rem;
+    padding: 1rem 0;
+}
+
+.Reviews-Section .box .stars i{
+    color: khaki;
+    font-size: 1.2rem;
+}
+
+/* <!-- ========================> footer Section <================================== --> */
+footer{
+    background: var(--bg-color);
+    padding: 10px 0;
+}
+footer p{
+    font-size: 2rem;
+    color: var(--text-color);
+    text-align: center;
+}
+.footer-section{
+    background: var(--bg-color);
+    border-top: .1rem solid var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding: 70px 0;
+}
+
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color: var(--main-color);
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+
+ .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background: khaki;
+    height: 2px;
+    box-sizing: border-box;
+    width: 80px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+
+} 
+.footer-col ul li a{
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all .3s ease;
+
+}
+/* ----------------Google Name coloring-------------- */
+
+.footer-col ul a .G-blue{
+    color: rgb(42, 88, 225);
+} 
+
+.footer-col ul li a .eo-red{
+    color: red;
+}
+.footer-col ul li a .l-green{
+    color: rgb(10, 183, 53);
+}
+
+.footer-col ul li a .o-orange{
+    color: khaki;
+}
+
+/* ------------------------end------------------------------- */
+
+.footer-col ul li a:hover{
+    color: khaki;
+    padding-left: 10px;
+}
+
+.footer-col ul a i{
+    font-size: 3rem;
+    margin: 5px;
+}
+
+.footer-col .button a{
+    display: block;
+    width: 12rem;
+}
+
+.footer-col .git-icon{
+    border-radius: 50%;
+    background: var(--bg-color);
+    color: var(--text-color);
+ }
+
+ .footer-col .twitter-icon{
+    color: var(--main-color);
+    border-radius: 50%;
+ }
+
+ .footer-col .insta-icon{
+    color: rgb(228, 49, 81);
+    /* color: red; */
+    border-radius: 50%;
+
+ }
+
+ .footer-col .din-icon{
+    color: rgb(52, 112, 209);
+    border-radius: 50%;
+ }
+
+.footer-col .button i{
+    font-size: 5rem;
+    margin: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-col .button .tube{
+   background: red;
+   color: var(--text-color);
+   text-shadow: 0 0.3rem .5rem red;
+}
+.footer-col .button .tube:hover{
+    background: var(--bg-color);
+    color: var(--text-color);
+ }
+
+ /* <!-- ========================> footer Section <================== --> */
+
+ .last-footer{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1.5rem 9%;
+    background: var(--second-bg-color);
+ }
+
+ .footer-icon a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--main-color);
+    border-radius: .9rem;
+    transition: 0.8s;
+
+ }
+ .footer-icon a i{
+    font-size: 1.6rem; 
+    /* background: var(--text-color); */
+
+}
+.footer-icon a:hover{ 
+    box-shadow: 0 0 2rem var(--main-color);
+}
+
+/* Responsive Using  Media query */
+@media (max-width: 767px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 40px;
+     
+    }
+}
+
+/* ===================================>Media Query <================================== */
+
+@media (max-width: 1200px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 991px){
+    header{
+        padding: 2rem;
+    }
+}
+
+@media (max-width:768px){
+    #menu-bar{
+        display: initial;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%; right: 0; left: 0;
+        background: var(--bg-color);
+        border-top: .1rem solid var(--main-color);
+        padding: 1rem 2rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .navbar a{
+        display: block;
+        border-radius: .5rem;
+        padding: 1rem;
+        margin: 1.5rem 0;
+        background: var(--second-bg-color);
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+@media (max-width:450px){
+    html{
+        font-size: 55%;
+    }
+
+    .footer a{
+        /* flex-direction: column-reverse; */
+        margin-bottom: 1rem;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- font awesome cdn link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@600&family=Poppins:wght@600&family=Ysabeau+Office:ital,wght@0,200;0,800;1,700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@600&family=Poppins:wght@600&family=Ysabeau+Office:ital,wght@0,200;0,800;1,700&family=Ysabeau+SC:wght@600&display=swap" rel="stylesheet">
+  <!-- ----------------------------------------------------- -->
+          <!-- font-family: 'Edu SA Beginner', cursive;
+          font-family: 'Poppins', sans-serif;
+          font-family: 'Ysabeau Office', sans-serif;
+
+          font-family: 'Edu SA Beginner', cursive;
+          font-family: 'Poppins', sans-serif;
+          font-family: 'Ysabeau Office', sans-serif;
+          font-family: 'Ysabeau SC', sans-serif;  -->
+  <!-- ----------------------------------------------------- -->
+  <link rel="stylesheet" href="https:unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/> <!-- it is used to drawer to review seciton-->
+  <title>Geeky_Website</title>
+
+  <!-- custom css file link -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!------------------------------------------ header Section -------------------------------------------->
+  <header>
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"><span>AI</span class='logo'>ToolsHub</a>
+    
+
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#image">Images</a>
+      <a href="#video">Videos</a>
+      <a href="#audio">Audios</a>
+      <a href="#ChatGPT">ChatGPT Era.</a>
+      <a href="#service1">Reviews</a>
+      <a href="#portfolio">About Us</a>
+    </nav>
+
+    <div class="icons">
+      <i class="fas fa-search" id="search-btn"></i>
+      <i class="fas fa-user" id="login-btn"></i>
+    </div>
+
+    <form action="" class="search-bar-container">
+      <input type="search" id="search-bar" placeholder="Search here...." />
+      <label for="search-bar" class="fas fa-search"></label>
+    </form>
+  </header>
+
+  <!-- =====================================> Login-Form-Section <=========================== -->
+  <div class="login-form-container">
+    <i class="fas fa-times" id="form-close"></i>
+    <form action="">
+      <h3>Login</h3>
+      <input type="email" class="box" placeholder="Enter your email" />
+      <input type="password" class="box" placeholder="Enter your passward" />
+      <button class="btn">Login Now</button>
+      <input type="checkbox" id="remember" value="Login Now" />
+      <label for="remember">remember me</label>
+      <p>forget password? <a href="#">click here</a></p>
+      <p>don't have account? <a href="#">register now</a></p>
+    </form>
+  </div>
+
+  <!-- ===================================> Home Section <================================== -->
+
+  <section class="home" id="home">
+    <div class="content">
+      <h3 class="main-heading">Welcome to AI Advanced Technology!</h3>
+      <p class="para">No Advertisement, To focus your target and Quick Responses on here !</p>
+      <a href="#" class="btn">Know more!</a>
+    </div>
+
+    <div class="controls">
+      <span class="vid-btn active" data-src="images/Radha Krishna ji.mp4"></span>
+      <span class="vid-btn" data-src="images/video (5).mp4"></span>
+      <span class="vid-btn" data-src="images/video (1).mp4"></span>
+      <span class="vid-btn" data-src="images/video (2).mp4"></span>
+      <span class="vid-btn" data-src="images/video (3).mp4"></span>
+      <span class="vid-btn" data-src="images/video (4).mp4"></span>
+    </div>
+
+    <div class="video-container">
+      <video src="images/Radha Krishna ji.mp4" id="video-slider" loop autoplay muted></video>
+      <!-- <video src="images/video (1).mp4" id="video-slider" loop autoplay muted></video> -->
+    </div>
+    <div class="description">
+      <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione numquam, ipsam natus voluptates repellat asperiores accusantium esse voluptatibus quis eum sunt iusto tenetur similique accusamus rerum delectus non consequuntur. Alias voluptatibus consequuntur perferendis, rem ab eveniet, aperiam asperiores optio modi, necessitatibus ratione tempore. Delectus ad repudiandae et accusamus ex iste repellat cupiditate debitis! Unde, nisi rerum debitis autem sit ipsam doloribus modi, ex soluta consectetur dignissimos, adipisci magni quia aspernatur? Pariatur quidem, ducimus necessitatibus, autem consequatur fuga numquam itaque nostrum quam, totam officiis dolorem natus quis ratione esse. Iure libero ad minima corrupti. Nisi explicabo quibusdam ipsa dolores eaque pariatur.</p> -->
+    </div>
+    
+  </section>
+
+  <!-- ===================================> Images Services Section <================================== -->
+
+  <section class="image-service" id="image">
+    <h1 class="heading">Image <span>Services</span></h1>
+    <div class="box-container">
+      <div class="box">
+        <img src="images/midjourney.png" alt="first" />
+        <div class="content">
+          <h3>Midjourney <span>Ai</span></h3>
+          <p>
+            Midjourney is an independent research lab exploring new mediums of thought and expanding the imaginative powers of the human species and  focused on design, human infrastructure, and AI....
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <!-- <div class="price">$90 <span>$120.00</span></div> -->
+          <a href="https://www.midjourney.com/home/?callbackUrl=%2Fapp%2F" class="btn" target="_blank">Visit Here!</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="images/ProfilePictureAi.png" alt="first" />
+        <div class="content">
+          <!-- <h3><i class="fas fa-map-marker-alt">1st Website name</i></h3> -->
+          <h3>ProfilePicture <span>Ai</span></h3>
+          <p>
+            ProfilePicture: To change your profile picture on social media, go to your profile page and click on the current profile picture to know more please click visit here......
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <!-- <div class="price">$90 <span>$120.00</span></div> -->
+          <a href="https://www.profilepicture.ai/" target="_blank" class="btn">Visit Here!</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="images/ProfilePictureAi.png" alt="first" />
+        <div class="content">
+          <!-- <h3><i class="fas fa-map-marker-alt">1st Website name</i></h3> -->
+          <h3>ProfilePicture <span>Ai</span></h3>
+          <p>
+            ProfilePicture: To change your profile picture on social media, go to your profile page and click on the current profile picture to know more please click visit here......
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <!-- <div class="price">$90 <span>$120.00</span></div> -->
+          <a href="https://www.profilepicture.ai/" target="_blank" class="btn">Visit Here!</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="images/scribehow.png" alt="first" />
+        <div class="content">
+          <h3>ScribeHow <span>Ai</span></h3>
+          <p>
+            ScribeHow is an online platform that provides step-by-step guides on various topics, including technology, health, news ancor avatar video  lifestyle to know please click visit here....
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <!-- <div class="price">$90 <span>$120.00</span></div> -->
+          <a href="https://scribehow.com/" target="_blank" class="btn">Visit Here!</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="images/deepswap2.png" alt="first" />
+        <div class="content">
+          <h3>DeepSwap <span>Ai</span></h3>
+          <p>
+            DeepSwap is a new technology developed by RefaceAI that allows users to swap faces in videos with valuable create content and much more efficient high accuracy.....
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <!-- <div class="price">$90 <span>$120.00</span></div> -->
+          <a href="https://www.deepswap.ai/" target="_blank" class="btn">Visit Here!</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="images/getimg.png" alt="first" />
+        <div class="content">
+          <h3>Getimg <span>Ai</span></h3>
+          <p>
+            getimg.ai is a suite of magical AI tools. Generate original images at scale, modify photos, expand pictures beyond their original borders, or create custom AI models. Start creating for free...
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <!-- <div class="price">$90 <span>$120.00</span></div> -->
+          <a href="https://getimg.ai/" target="_blank" class="btn">Visit Here!</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="images/dalle.png" alt="first" />
+        <div class="content">
+          <h3>DALL-E <span>Ai</span></h3>
+          <p>
+            DALL-E and DALL-E 2 are deep learning models developed by OpenAI to generate digital images from natural language descriptions. all most available here!.....
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <!-- <div class="price">$90 <span>$120.00</span></div> -->
+          <a href="https://openai.com/research/dall-e" target="_blank" class="btn">Visit Here!</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="images/nvidia.png" alt="first" />
+        <div class="content">
+          <h3>Nvidia <span>Ai</span></h3>
+          <p>
+            Nvidia has come to dominate the market for chips used in artificial intelligence (AI) systems. Interest in that sector reached frenzied levels after ChatGPT went public last November....          
+          </p>
+
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <!-- <div class="price">$90 <span>$120.00</span></div> -->
+          <a href="https://www.nvidia.com/en-us/research/ai-playground/" target="_blank" class="btn">Visit Here!</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="images/deepdream.png" alt="first" />
+        <div class="content">
+          <h3>DeepDream <span>Ai</span></h3>
+          <p>
+            DeepDream is a computer vision program created by Google engineer Alexander Mordvintsev that uses a convolutional neural network to find and enhance patterns in images via algorithmic... 
+          </p>
+
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <!-- <div class="price">$90 <span>$120.00</span></div> -->
+          <a href="https://deepdreamgenerator.com/" target="_blank" class="btn">Visit Here!</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="images/RunWayml.png" alt="first" />
+        <div class="content">
+          <h3>Runway <span>Ai</span></h3>
+          <p>
+            Runway, we believe everyone has a story to tell. Our mission is to make content creation accessible to all Services to know more please click visit here....          
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <!-- <div class="price">$90 <span>$120.00</span></div> -->
+          <a href="https://runwayml.com/" target="_blank" class="btn">Visit Here!</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================> Video Services Section <================================== -->
+
+  <section class="video-section" id="video">
+    <h2 class="heading">Video <span>Services</span></h2>
+    <div class="video-container">
+      <div class="video-box">
+        <img src="images/image (1).jpg" alt="" />
+        <div class="video-layer">
+          <h4>Deep Learning</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+            eaque?
+          </p>
+          <a href="#"><i class="bx bx-link-external"></i></a>
+        </div>
+      </div>
+
+      <div class="video-box">
+        <img src="images/image (2).jpg" alt="" />
+        <div class="video-layer">
+          <h4>Deep Learning</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+            eaque?
+          </p>
+          <a href="#"><i class="bx bx-link-external"></i></a>
+        </div>
+      </div>
+
+      <div class="video-box">
+        <img src="images/image (3).jpg" alt="" />
+        <div class="video-layer">
+          <h4>Deep Learning</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+            eaque?
+          </p>
+          <a href="#"><i class="bx bx-link-external"></i></a>
+        </div>
+      </div>
+
+      <div class="video-box">
+        <img src="images/image (4).jpg" alt="" />
+        <div class="video-layer">
+          <h4>Deep Learning</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+            eaque?
+          </p>
+          <a href="#"><i class="bx bx-link-external"></i></a>
+        </div>
+      </div>
+
+      <div class="video-box">
+        <img src="images/image (5).jpg" alt="" />
+        <div class="video-layer">
+          <h4>Deep Learning</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+            eaque?
+          </p>
+          <a href="#"><i class="bx bx-link-external"></i></a>
+        </div>
+      </div>
+
+      <div class="video-box">
+        <img src="images/image (6).jpg" alt="" />
+        <div class="video-layer">
+          <h4>Deep Learning</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+            eaque?
+          </p>
+          <a href="#"><i class="bx bx-link-external"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================> Audio Services Section <================================== -->
+
+  <section class="Audio-Section" id="audio">
+    <h2 class="heading">Audio <span>Services</span></h2>
+    <div class="audio-container">
+      <div class="box">
+        <img src="images/image (2).jpg" alt="" />
+        <div class="content">
+          <h3>Affortable Price</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor,
+            recusandae.
+          </p>
+          <a href="#" class="btn">Know More!</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="images/image (3).jpg" alt="" />
+        <div class="content">
+          <h3>Affortable Price</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor,
+            recusandae.
+          </p>
+          <a href="#" class="btn">Know More!</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="images/image (5).jpg" alt="" />
+        <div class="content">
+          <h3>Affortable Price</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor,
+            recusandae.
+          </p>
+          <a href="#" class="btn">Know More!</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="images/image (4).jpg" alt="" />
+        <div class="content">
+          <h3>Affortable Price</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor,
+            recusandae.
+          </p>
+          <a href="#" class="btn">Know More!</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="images/image (7).jpg" alt="" />
+        <div class="content">
+          <h3>Affortable Price</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor,
+            recusandae.
+          </p>
+          <a href="#" class="btn">Know More!</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="images/image (8).jpg" alt="" />
+        <div class="content">
+          <h3>Affortable Price</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor,
+            recusandae.
+          </p>
+          <a href="#" class="btn">Know More!</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================> ChatGPT Section <================================== -->
+
+
+  <section class="image-service chat-section" id="ChatGPT">
+    <h1 class="heading">ChatGPT <span>Era.</span></h1>
+    <div class="box-container">
+      <div class="box">
+        <img src="GPT-Era/chatgpt.png" alt="first" />
+        <div class="content">
+          <h3>ChatGPT <span>Ai</span></h3>
+          <p>
+            ChatGPT is a natural language processing tool developed by openAI that allows to behave human-like,. The language model can answer questions and assist you with tasks... emails, essays,code 
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <!-- <div class="price">$90 <span>$120.00</span></div> -->
+          <a href="https://chat.openai.com/" class="btn" target="_blank">Visit Here!</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="GPT-Era/colpilot.png" alt="first" />
+        <div class="content">
+          <!-- <h3><i class="fas fa-map-marker-alt">1st Website name</i></h3> -->
+          <h3>Copilot <span>Ai</span></h3>
+          <p>
+            Research has found GitHub Copilot helps developers code faster, focus on solving bigger problems, stay in the flow longer, and feel more fulfilled with their work.......
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <!-- <div class="price">$90 <span>$120.00</span></div> -->
+          <a href="https://github.com/features/copilot" target="_blank" class="btn">Visit Here!</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="GPT-Era/monica.png" alt="first" />
+        <div class="content">
+          <h3>Monica <span>Ai</span></h3>
+          <p>
+            Monica is your AI-Powered copilot in chrome. You can chat with Monica about anything, anywhere. Let Monica help you create effortlessly and insert text anywhere...
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <!-- <div class="price">$90 <span>$120.00</span></div> -->
+          <a href="https://monica.im/" target="_blank" class="btn">Visit Here!</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="GPT-Era/jasper chat.png" alt="first" />
+        <div class="content">
+          <h3>Jasper <span>Ai</span></h3>
+          <p>
+            Jasper Chat is different than ChatGPT in that it is built for business use cases like marketing, sales and more....
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <!-- <div class="price">$90 <span>$120.00</span></div> -->
+          <a href="https://www.jasper.ai/" target="_blank" class="btn">Visit Here!</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="GPT-Era/Google Bard.png" alt="first" />
+        <div class="content">
+          <h3>Google bard <span>Ai</span></h3>
+          <p>
+            Google Bard generates responses using internet.  Google Bard is used for chatbots, explaining topics, answering questions, automating tasks, etc
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <!-- <div class="price">$90 <span>$120.00</span></div> -->
+          <a href="https://bard.google.com/" target="_blank" class="btn">Visit Here!</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="GPT-Era/poe.png" alt="first" />
+        <div class="content">
+          <h3>Poe <span>Ai</span></h3>
+          <p>
+            Poe lets you ask questions, get instant answers, and have back-and-forth conversations with AI......
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <!-- <div class="price">$90 <span>$120.00</span></div> -->
+          <a href="https://poe.com/" target="_blank" class="btn">Visit Here!</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="GPT-Era/Replika.png" alt="first" />
+        <div class="content">
+          <h3>Replika <span>Ai</span></h3>
+          <p>
+            Your Replika will always be by your side no matter what you’re up to,  Chat about your day, do fun or relaxing activities together, share real-life experiences...
+          </p>
+
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <!-- <div class="price">$90 <span>$120.00</span></div> -->
+          <a href="https://replika.com/" target="_blank" class="btn">Visit Here!</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="GPT-Era/youchat1.png" alt="first" />
+        <div class="content">
+          <h3>YouChat <span>Ai</span></h3>
+          <p>
+            YouPro, experience the freedom of unlimited access to cutting-edge AI models. You can search, code, write, and create images all in one place. Explore⚡Pro
+          </p>
+
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <!-- <div class="price">$90 <span>$120.00</span></div> -->
+          <a href="https://you.com/" target="_blank" class="btn">Visit Here!</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="GPT-Era/Elicit.png" alt="first" />
+        <div class="content">
+          <h3>Elicit <span>Ai</span></h3>
+          <p>
+            Elicit is a research assistant using language models like GPT-3 to automate parts of researchers’ workflows...    
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <!-- <div class="price">$90 <span>$120.00</span></div> -->
+          <a href="https://elicit.org/" target="_blank" class="btn">Visit Here!</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="GPT-Era/socratic .png" alt="first" />
+        <div class="content">
+          <h3>Socratic <span>Ai</span></h3>
+          <p>
+            Socratic was specially built to support Science, Math, Literature, Social Studies, and more....    
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <!-- <div class="price">$90 <span>$120.00</span></div> -->
+          <a href="https://socratic.org/" target="_blank" class="btn">Visit Here!</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================> Reviews Section <================================== -->
+
+  <section class="Reviews-Section">
+    <h1 class="heading">Your <span>Reviews</span></h1>
+    <div class="swiper mySwiper review-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="box">
+            <img src="Review Profile/Hritik.jpg" alt="">
+            <h3>Hritik</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non fugiat dicta rerum aperiam quod illum ea sint. Doloribus, nulla amet.</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="box">
+            <img src="Review Profile/peakpx (1).jpg" alt="">
+            <h3>Prachi</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non fugiat dicta rerum aperiam quod illum ea sint. Doloribus, nulla amet.</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="box">
+            <img src="Review Profile/peakpx (2).jpg" alt="">
+            <h3>Smile emoji</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non fugiat dicta rerum aperiam quod illum ea sint. Doloribus, nulla amet.</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+          
+        <div class="swiper-slide">
+          <div class="box">
+            <img src="Review Profile/peakpx (3).jpg" alt="">
+            <h3>Korean Girl</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non fugiat dicta rerum aperiam quod illum ea sint. Doloribus, nulla amet.</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="box">
+            <img src="Review Profile/peakpx (4).jpg" alt="">
+            <h3>Rashmika Madana</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non fugiat dicta rerum aperiam quod illum ea sint. Doloribus, nulla amet.</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="box">
+            <img src="Review Profile/peakpx (5).jpg" alt="">
+            <h3>Akshay Kumar</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non fugiat dicta rerum aperiam quod illum ea sint. Doloribus, nulla amet.</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="box">
+            <img src="Review Profile/1329279.jpg" alt="">
+            <h3>Hritik Roshan</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non fugiat dicta rerum aperiam quod illum ea sint. Doloribus, nulla amet.</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="box">
+            <img src="images/image (2).jpg" alt="">
+            <h3>Juvi</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non fugiat dicta rerum aperiam quod illum ea sint. Doloribus, nulla amet.</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="box">
+            <img src="Review Profile/peakpx (4).jpg" alt="">
+            <h3>Rashmika Madana</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non fugiat dicta rerum aperiam quod illum ea sint. Doloribus, nulla amet.</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="box">
+            <img src="Review Profile/kajol.jpg" alt="">
+            <h3>Kajol Devgn</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non fugiat dicta rerum aperiam quod illum ea sint. Doloribus, nulla amet.</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="box">
+            <img src="Review Profile/ajay.jpg" alt="">
+            <h3>Ajay Devgn</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non fugiat dicta rerum aperiam quod illum ea sint. Doloribus, nulla amet.</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+  </section>
+
+
+<!-- ========================> footer Section <================================== -->
+
+<footer class="footer-section">
+  <div class="container">
+    <div class="row">
+
+      <div class="footer-col">
+        <h4>Our Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Services</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="https://nielit.gov.in/delhi/index.php" target="_blank">Nielit Delhi Center</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Learn Unique</h4>
+        <ul>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="https://www.deeplearning.ai/" target="_blank">Deep Learning</a></li>
+          <li><a href="https://mindmajix.com/artificial-intelligence-technologies" target="_blank">Newest technology</a></li>
+          <li><a href="https://developers.google.com/machine-learning/foundational-courses" target="_blank">Learn with <span class="G-blue">G</span><span class="eo-red">o</span><span class="o-orange">o</span><span class="G-blue">g</span><span class="l-green">l</span><span class="eo-red">e</span></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Latest Technology</h4>
+        <ul>
+          <li><a href="https://www.w3schools.com/ai/" target="_blank">Artificial Intelligence </a></li>
+          <li><a href="https://cloud.google.com/ai/generative-ai/" target="_blank">Generative AI</a></li>
+          <li><a href="https://python.langchain.com/docs/get_started/introduction.html" target="_blank">Langchain Framework</a></li>
+          <li><a href="https://teachablemachine.withgoogle.com/" target="_blank">Teachable Machine</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>follow us</h4>
+        <ul>
+          <a href="https://geeky-vikas.github.io/portfolio.github.io/" target="_blank"><i class='bx bxl-github git-icon'></i></a>
+          <a href="#"><i class='bx bxl-twitter twitter-icon'></i></a>
+          <a href="#"><i class='bx bxl-instagram insta-icon'></i></a>
+          <a href="https://www.linkedin.com/in/vikas-babu-63345b1ba"><i class='bx bxl-linkedin din-icon'></i></a>
+          
+        </ul>
+        <div class="button">
+          <a href="https://www.youtube.com/@exploretech-VikasG/videos" target="_blank" class="btn tube">Subscribe!</a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<footer class="last-footer">
+  <div>
+    <p>Copyright &copy;2023 Create by Vikas Gautam | All Rights Resevered |</p>
+  </div>
+  <div class="footer-icon">
+    <a href="#home"><i class='bx bxs-hand-up'></i>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+  <!-- custom js file link -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- Reviewer Slider -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <!--Scroll Reveal-->
+  <script src="script.js"></script>
+</body>
+
+</html>
